@@ -1,18 +1,18 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #eef2f5;
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+Body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+background-color: #eef2f5;
+font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    background-image: url('BackgroundLogin.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-color: #000000;
+background-image: url('BackgroundRegister.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-color: #000000;
 }
 
 .main-container {
@@ -49,7 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
- }
+}
 
 .login-input{
     width: 90%;
@@ -219,7 +219,7 @@ body {
     color: white;
     font-size: 50px;
     font-weight: 500;
-    width: 25%;
+    width: 35%;
 }
 
 .header-area h2 {
@@ -251,19 +251,4 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s;
-}
-
-@keyframes slideOutDown {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(100vh);
-    }
-}
-
-.slide-out {
-    animation: slideOutDown 0.7s ease-in-out forwards;
 }
