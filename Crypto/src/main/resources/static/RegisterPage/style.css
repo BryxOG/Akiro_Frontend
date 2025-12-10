@@ -1,0 +1,254 @@
+Body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+background-color: #eef2f5;
+font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+background-image: url('BackgroundRegister.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-color: #000000;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 550px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.column {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px  solid rgba(255,255,255,0.2);
+    flex: 1;
+}
+
+.columns-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.left-column {
+    border-right: 1px solid rgba(255,255,255,0.5);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-input{
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-input::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+.login-button{
+    width: 90%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#ff6ec4 0%, #4dc4ff 100%);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-button:hover{
+    transform: translateY(-2px);
+    box-shadow:
+            0 4px 15px rgba(255, 110, 196, 0.7),
+            0 8px 30px rgba(77,196,255,0.5);
+}
+
+.login-input:focus{
+    outline: none;
+    border-color: #4dc4ff;
+    box-shadow:
+            0 4px 15px rgba(255, 110, 196, 0.7),
+            0 8px 30px rgba(77,196,255,0.5);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.right-column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.soon-button {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gmail-button{
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1f1f1f;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gmail-button:hover {
+    transform: none;
+    background-color: #f0f0f0;
+    box-shadow:
+            0 4px 15px rgba(255, 110, 196, 0.7),
+            0 8px 30px rgba(77,196,255,0.5);
+}
+
+.gmail-button .gmail-text{
+    font-family: 'Roboto', sans-serif;
+}
+
+.gmail-button .google-icon{
+    position: absolute;
+    left: 20px;
+    font-size: 25px;
+    background: conic-gradient(from -45deg,#ea4335,#4285f4,#34a853,#fbbc05,#ea4335);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0px;
+}
+
+.guest-button{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.guest-button:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-color: #4dc4ff;
+    transform: none;
+    box-shadow:
+            0 4px 15px rgba(255, 110, 196, 0.7),
+            0 8px 30px rgba(77,196,255,0.5);
+}
+
+.guest-button .guest-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.guest-button .guest-icon{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header-area {
+    padding: 15px 30px 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.left-column h3 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    width: 35%;
+}
+
+.header-area h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-area h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-area{
+    padding: 10px 30px;
+    text-align: center;
+    border-top: 1px  solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 14px;
+}
+
+.footer-area p {
+    margin: 0;
+}
+
+.social-link{
+    color: #4dc4ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
